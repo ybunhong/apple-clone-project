@@ -10,7 +10,7 @@ In addition to coding, the project emphasizes **Information Architecture (IA)**:
 
 ## Project Setup
 
-###  Prerequisites
+### Prerequisites
 
 Ensure the following tools are installed:
 
@@ -38,9 +38,11 @@ git clone https://git.clp.kr/ybunhonggg/web-clone-apple.git
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
+
 This command will install all the required dependencies, including:
 
 vite for local development
@@ -50,9 +52,11 @@ vite for local development
 husky for commit message linting
 
 ### 3. Activate Git Hooks (Husky)
+
 ```bash
 npx husky install
 ```
+
 This sets up Git hooks on your local machine to enforce commit message rules using Commitlint.
 
 ⚠️You must run this command once after cloning, or commit checks will not run.
