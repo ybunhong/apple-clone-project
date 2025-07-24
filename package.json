@@ -1,7 +1,17 @@
 {
+  "name": "apple-cloning-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
-    "husky": "^9.1.7"
+    "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
   }
 }

@@ -1,0 +1,92 @@
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  padding: 32px;        
+  text-align: center;
+  z-index: 1;
+  gap: 16px
+}
+
+/* POSITION MODIFIERS */
+.hero-content.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-content.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-content.top {
+  justify-content: flex-start;
+}
+
+.hero-content.bottom {
+  justify-content: flex-end;
+}
+
+.hero-content.bottom-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-content.bottom-left {
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-content.top-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-content.top-right {
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Optional cleanup */
+.hero-logo {
+  width: 80px;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-desc {
+  font-size: 16px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-colorful-text {
+  color: red;
+}
