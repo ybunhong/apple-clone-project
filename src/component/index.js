@@ -1,3 +1,7 @@
 import "./base-button/base-button.js";
 import "./icon-button/icon-button.js";
 import "./banner/hero-banner.js";
+import "./footer/footer.js";
+import "./header/main-header.js";
+import "./accordion/accordion.js";
+import "./autoscroll/auto-scroll.js";
