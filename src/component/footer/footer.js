@@ -47,6 +47,7 @@ Features are subject to change. Some features, applications, and services may no
 
         <hr>
         <div class="footer-nav">
+          <div class="container-nav-items">
           <div class="footer-nav-items">
             <p style="font-weight:600; color:black">Shop and Learn</p>
             <p>Store</p>
@@ -62,60 +63,97 @@ Features are subject to change. Some features, applications, and services may no
             <p>Gift Cards</p>
           </div>
           <div class="footer-nav-items">
-            <p style="font-weight:600; color:black">Shop and Learn</p>
-            <p>Store</p>
-            <p>Mac</p>
-            <p>iPad</p>
-            <p>iPhone</p>
-            <p>Watch</p>
-            <p>Vision</p>
-            <p>AirPod</p>
-            <p>TV & Home</p>
-            <p>AirTag</p>
-            <p>Accessories</p>
-            <p>Gift Cards</p>
+            <p style="font-weight:600; color:black">Apple Wallet</p>
+            <p>Wallet</p>
+            <p>Apple Card</p>
+            <p>Apple Pay</p>
+            <p>Apple Cash</p>
           </div>
-          <div class="footer-nav-items">
-            <p style="font-weight:600; color:black">Shop and Learn</p>
-            <p>Store</p>
-            <p>Mac</p>
-            <p>iPad</p>
-            <p>iPhone</p>
-            <p>Watch</p>
-            <p>Vision</p>
-            <p>AirPod</p>
-            <p>TV & Home</p>
-            <p>AirTag</p>
-            <p>Accessories</p>
-            <p>Gift Cards</p>
           </div>
+          <div class="container-nav-items">
           <div class="footer-nav-items">
-            <p style="font-weight:600; color:black">Shop and Learn</p>
-            <p>Store</p>
-            <p>Mac</p>
-            <p>iPad</p>
-            <p>iPhone</p>
-            <p>Watch</p>
-            <p>Vision</p>
-            <p>AirPod</p>
-            <p>TV & Home</p>
-            <p>AirTag</p>
-            <p>Accessories</p>
-            <p>Gift Cards</p>
+            <p style="font-weight:600; color:black">Account</p>
+            <p>Manage Your Apple Account</p>
+            <p>Apple Store Account</p>
+            <p>iCloud.com</p>
+            </div>
+                      <div class="footer-nav-items">
+            <p style="font-weight:600; color:black">Entertainment</p>
+            <p>Apple One</p>
+            <p>Apple TV+</p>
+            <p>Apple Music</p>
+            <p>Apple Arcade</p>
+            <p>Apple Fitness+</p>
+            <p>Apple News+</p>
+            <p>Apple Podcasts</p>
+            <p>Apple Books</p>
+            <p>App Store</p>
           </div>
+          </div>
+          <div class="container-nav-items">
           <div class="footer-nav-items">
-            <p style="font-weight:600; color:black">Shop and Learn</p>
-            <p>Store</p>
-            <p>Mac</p>
-            <p>iPad</p>
-            <p>iPhone</p>
-            <p>Watch</p>
-            <p>Vision</p>
-            <p>AirPod</p>
-            <p>TV & Home</p>
-            <p>AirTag</p>
-            <p>Accessories</p>
-            <p>Gift Cards</p>
+            <p style="font-weight:600; color:black">Apple Store</p>
+            <p>Find a Store</p>
+            <p>Genius Bar</p>
+            <p>Today at Apple</p>
+            <p>Group Reservation</p>
+            <p>Apple Camp</p>
+            <p>Apple Store App</p>
+            <p>Certified Refurbished</p>
+            <p>Apple Trade in</p>
+            <p>Financing</p>
+            <p>Carrier Deals at Apple</p>
+            <p>Order Status</p>
+            <p>Shopping help</p>
+            </div>
+          </div>
+          <div class="container-nav-items">
+          <div class="footer-nav-items">
+            <p style="font-weight:600; color:black">For Business</p>
+            <p>Apple and Business</p>
+            <p>Shop for Business</p>
+          </div>
+                    <div class="footer-nav-items">
+            <p style="font-weight:600; color:black">For Education</p>
+            <p>Apple and Education</p>
+            <p>Shop for K-12</p>
+             <p>Shop for College</p>
+          </div>
+                    <div class="footer-nav-items">
+            <p style="font-weight:600; color:black">For Healthcare</p>
+            <p>Apple in Heathcare</p>
+            <p>Mac in Heathcare</p>
+            <p>Heath on Apple Watch</p>
+            <p>Health Records on iPhone and iPad</p>
+          </div>
+                    <div class="footer-nav-items">
+            <p style="font-weight:600; color:black">For Government</p>
+            <p>Shop for Government</p>
+            <p>Shop Veterns and Military</p>
+          </div>
+
+          </div>
+          <div class="container-nav-items">
+          <div class="footer-nav-items">
+            <p style="font-weight:600; color:black">Apple Values</p>
+            <p>Accessibilty</p>
+            <p>Education</p>
+            <p>Enviroment</p>
+            <p>Inclusion and Diversity</p>
+            <p>Privacy</p>
+            <p>Recial Equity and Justice</p>
+            <p>Supply Chain Innovation</p>
+          </div>
+                    <div class="footer-nav-items">
+            <p style="font-weight:600; color:black">About Apple</p>
+            <p>Newsroom</p>
+            <p>Apple Leadership</p>
+            <p>Career Opportunities</p>
+            <p>Investors</p>
+            <p>Ethics & Compliance</p>
+            <p>Events</p>
+            <p>Contact Apple</p>
+          </div>
           </div>
         </div>
         </section>
