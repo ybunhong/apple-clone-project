@@ -58,7 +58,6 @@ Features are subject to change. Some features, applications, and services may no
             <p>Vision</p>
             <p>AirPod</p>
             <p>TV & Home</p>
-            <p>AirTag</p>
             <p>Accessories</p>
             <p>Gift Cards</p>
           </div>
