@@ -1,7 +1,7 @@
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 660px;
   overflow: hidden;
 }
 
@@ -15,44 +15,36 @@
   position: absolute;
   inset: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
-  padding: 32px;        
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
   z-index: 1;
-  gap: 16px
+  text-align: center;
 }
 
-/* POSITION MODIFIERS */
-.hero-content.left {
+/* Positioning modifiers */
+.hero-content.top {
+  justify-content: center;
   align-items: flex-start;
+  text-align: center;
+}
+
+.hero-content.bottom {
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.hero-content.left {
+  justify-content: flex-start;
+  align-items: center;
   text-align: left;
 }
 
 .hero-content.right {
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
   text-align: right;
-}
-
-.hero-content.top {
-  justify-content: flex-start;
-}
-
-.hero-content.bottom {
-  justify-content: flex-end;
-}
-
-.hero-content.bottom-right {
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
-}
-
-.hero-content.bottom-left {
-  justify-content: flex-end;
-  align-items: flex-start;
-  text-align: left;
 }
 
 .hero-content.top-left {
@@ -62,24 +54,55 @@
 }
 
 .hero-content.top-right {
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: right;
+}
+
+.hero-content.bottom-left {
   justify-content: flex-start;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.hero-content.bottom-right {
+  justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
 }
 
-/* Optional cleanup */
+/* Default centering (already covered by base .hero-content) */
+.hero-content.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Content wrapper */
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: inherit;
+  align-items: center;
+}
+
+/* Elements */
 .hero-logo {
-  width: 80px;
-  margin-bottom: 16px;
+  width: auto;
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1d1d1f;
 }
 
 .hero-desc {
-  font-size: 16px;
+  font-size: 1.25rem;
+  margin: 0;
+  color: #1d1d1f;
 }
 
 .hero-buttons {
@@ -88,5 +111,6 @@
 }
 
 .hero-colorful-text {
-  color: red;
+  font-size: 1rem;
+  margin: 0;
 }
