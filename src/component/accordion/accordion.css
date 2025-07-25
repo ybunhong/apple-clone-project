@@ -1,0 +1,45 @@
+.accordion {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.accordion-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-head span {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease, padding 0.3s ease, margin-top 0.3s ease;
+  box-sizing: border-box;
+}
+
+.accordion.open .accordion-content {
+  max-height: 1000px;
+}
+
+.desc-label {
+  font-size: 12px;
+  color: #afafaf;
+}
+
+.desc-value-list li {
+  list-style-type: square;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.accordion.open .toggle-icon {
+  transform: rotate(-180deg);
+}
