@@ -74,9 +74,9 @@
  */
 
 import "./icon-button.css";
-import { BaseComponent } from "../base-component";
+import { BaseComponent } from "../base-component.js";
 
-export class IconButton extends BaseComponent {
+class IconButton extends BaseComponent {
   static get observedAttributes() {
     return ["icon", "size", "toggle-icon", "disabled", "text", "href"];
   }
@@ -98,6 +98,7 @@ export class IconButton extends BaseComponent {
   connectedCallback() {
     super.connectedCallback();
     this.action = this.getAttribute("action");
+    this.updateTemplate();
 
     this.addEventListener("click", (event) => {
       if (this.disabled) {
@@ -121,7 +122,19 @@ export class IconButton extends BaseComponent {
         );
       }
     });
+  }
 
+  static validateSize(value) {
+    const num = parseFloat(value);
+    if (Number.isNaN(num) || num <= 0) {
+      console.warn(`Invalid size value: ${value}. Using default size 1.`);
+      return 1;
+    }
+    return Math.min(Math.max(num, 0.1), 8);
+  }
+
+  setToggleIcon() {
+    this.icon = this.isToggled ? this.toggleIcon : this.originalIcon;
     this.updateTemplate();
   }
 
@@ -130,9 +143,7 @@ export class IconButton extends BaseComponent {
       switch (name) {
         case "icon":
           this.icon = newValue || "";
-          if (!this.originalIcon) {
-            this.originalIcon = this.icon;
-          }
+          if (!this.originalIcon) this.originalIcon = newValue || "";
           break;
         case "size":
           this.size = IconButton.validateSize(newValue);
@@ -151,51 +162,59 @@ export class IconButton extends BaseComponent {
           this.href = newValue || "";
           this.isLink = Boolean(newValue);
           break;
+        default:
+          console.warn(`Unhandled attribute: ${name}`);
       }
-
       this.updateTemplate();
     }
-  }
-
-  static validateSize(value) {
-    const num = parseFloat(value);
-    return Number.isNaN(num) || num <= 0 ? 1 : Math.min(Math.max(num, 0.1), 8);
-  }
-
-  setToggleIcon() {
-    this.icon = this.isToggled ? this.toggleIcon : this.originalIcon;
-    this.updateTemplate();
   }
 
   updateTemplate() {
     const hasIcon = Boolean(this.icon);
     const hasText = Boolean(this.text);
-    const altText = hasText ? this.text : "icon button";
-    const sizeStyle = `style="transform: scale(${this.size})"`;
-    const disabledAttrs = this.disabled ? 'disabled aria-disabled="true" tabindex="-1"' : "";
+    const altText = hasText ? this.text : "Button";
+    const currentSize = this.size || 1;
 
-    let content = "";
+    let buttonContent = "";
 
     if (hasIcon) {
-      content += `<img src="${this.icon}" alt="${altText}" class="icon-image" />`;
+      buttonContent += `<img 
+        src="${this.icon}" 
+        alt="${altText}" 
+        class="icon-image" 
+        style="width: ${24 * currentSize}px; height: ${24 * currentSize}px;" 
+      />`;
     }
 
     if (hasText) {
-      content += `<span class="icon-button-text">${this.text}</span>`;
+      buttonContent += `<span class="button-text ${hasIcon ? "ml-2" : ""}">${
+        this.text
+      }</span>`;
     }
 
     if (!hasIcon && !hasText) {
-      content = `<span class="icon-button-text">Button</span>`;
+      console.warn("IconButton: No icon or text provided.");
+      buttonContent = "<span class='button-text'>Button</span>";
     }
 
     this.template = this.isLink
-      ? `<a href="${this.href}" class="icon-button ${this.disabled ? "icon-button-disabled" : ""}" ${sizeStyle} ${disabledAttrs}>${content}</a>`
-      : `<button class="icon-button" ${sizeStyle} ${disabledAttrs}>${content}</button>`;
+      ? `
+      <a href="${this.href}" 
+         class="icon-button" 
+         role="button"
+         ${this.disabled ? "aria-disabled='true' tabindex='-1'" : ""}>
+        ${buttonContent}
+      </a>`
+      : `
+      <button class="icon-button" 
+              ${this.disabled ? "disabled" : ""}>
+        ${buttonContent}
+      </button>`;
 
     this.render();
   }
 
-  // Public API
+  // Public methods
   toggle() {
     if (this.hasToggleIcon) {
       this.isToggled = !this.isToggled;
@@ -204,28 +223,25 @@ export class IconButton extends BaseComponent {
   }
 
   setToggleState(toggled) {
-    this.isToggled = Boolean(toggled);
-    this.setToggleIcon();
+    if (this.hasToggleIcon) {
+      this.isToggled = Boolean(toggled);
+      this.setToggleIcon();
+    }
   }
 
   setText(newText) {
-    this.text = newText || "";
-    this.setAttribute("text", this.text);
+    this.setAttribute("text", newText || "");
   }
 
   setIcon(newIcon) {
-    this.icon = newIcon || "";
-    this.originalIcon = newIcon || "";
-    this.setAttribute("icon", this.icon);
+    this.setAttribute("icon", newIcon || "");
   }
 
   disable() {
-    this.disabled = true;
     this.setAttribute("disabled", "");
   }
 
   enable() {
-    this.disabled = false;
     this.removeAttribute("disabled");
   }
 
@@ -234,8 +250,12 @@ export class IconButton extends BaseComponent {
       icon: this.icon,
       text: this.text,
       size: this.size,
+      originalIcon: this.originalIcon,
+      toggleIcon: this.toggleIcon,
       isToggled: this.isToggled,
       disabled: this.disabled,
+      hasToggleIcon: this.hasToggleIcon,
+      type: this.isLink ? "link" : "button",
     };
   }
 }

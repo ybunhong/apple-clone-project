@@ -1,37 +1,33 @@
 .icon-button {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 12px;
-  border: none;
+  justify-content: center;
+  padding: 8px;
   background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  border: none;
   border-radius: 4px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: black;
+  cursor: pointer;
   text-decoration: none;
-}
-
-.icon-button:hover {
-  background-color: #f0f0f0;
+  color: inherit;
 }
 
 .icon-button:disabled,
 .icon-button[aria-disabled="true"] {
-  opacity: 0.5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.icon-button .icon-image {
+  display: inline-block;
+  object-fit: contain;
   pointer-events: none;
 }
 
-.icon-image {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+.icon-button .button-text {
+  font-size: 14px;
+  line-height: 1;
 }
 
-.icon-button-text {
-  display: inline-block;
-  vertical-align: middle;
+.ml-2 {
+  margin-left: 0.5rem;
 }
