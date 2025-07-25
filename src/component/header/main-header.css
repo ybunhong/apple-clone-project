@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  gap: 16px;
+}
+
+header a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #afafaf;
+}
+
+.header-navigation {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.header-toolbar {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 835px) {
+  .hamburger {
+    display: inline-block;
+  }
+
+  .header-navigation {
+    display: none;
+  }
+}
