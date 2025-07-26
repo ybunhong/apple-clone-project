@@ -1,0 +1,31 @@
+.iphone-container {
+  width: 100%;
+  height: 660px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.get-iphone {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.get-to-know-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+.get-to-know {
+  width: fit-content;
+  height: 660px;
+  margin: 16px;
+  flex-shrink: 0;
+}
+
+.iphone-container hero-banner icon-button {
+  border-radius: 50%;
+  background-color: #d2d2d7;
+}
+.get-to-know-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
