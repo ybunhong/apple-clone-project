@@ -2,6 +2,13 @@
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   column-gap: 16px;
+  row-gap: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 @media (max-width: 875px) {
