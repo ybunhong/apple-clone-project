@@ -1,3 +1,11 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  column-gap: 16px;
+}
+
+@media (max-width: 875px) {
+  .hero-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

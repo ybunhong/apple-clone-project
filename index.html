@@ -1,29 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <script type="module" src="./src/component/index.js"></script>
-    <link rel="stylesheet" href="./src/styles/index.css">
-    <link rel="stylesheet" href="./index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple</title>
+    <link rel="icon" type="image/png" href="./src/assets/apple-title.png" />
   </head>
   <body>
-    <h1>213213</h1>
-    <base-button label="123" variant="primary"></base-button>
-    <icon-button icon="./src/assets/cross.svg" size="1.1" text="1321"></icon-button>
-    <button type="button" class="btn-close" aria-label="Close"></button>
-    <h1>123</h1>
-    <hero-banner
-  src="./src/assets/image/image1.jpg"
-  title="Explore the Collection"
-  desc="Genuine Porsche apparel and accessories"
-  position-button="top"
-  color-text="text-white"
-  primary-button="Shop Now"
-  secondary-button="Learn More"
-  ></hero-banner>
+    <!-- Header-->
 
+    <main-header></main-header>
+    <!-- Hero Section -->
+    <section class="hero-flex">
+      <hero-banner
+        src="./src/assets/image/image1.jpg"
+        title="iPhone"
+        desc="Meet the iPhone 16 family"
+        position-button="top"
+        primary-button="Shop Now"
+        secondary-button="Learn More"
+      ></hero-banner>
+      <hero-banner
+        src="./src/assets/image/image2.jpg"
+        title="MacBook Air"
+        desc="Sky blue color. Sky high performance with M4"
+        position-button="top"
+        primary-button="Learn more"
+        secondary-button="Buy"
+      ></hero-banner>
+      <!-- iPad remove -->
+      <hero-banner
+        src="./src/assets/image/image3.jpg"
+        title="iPad Pro"
+        desc="Unbelievably thin. Incredible powerful"
+        position-button="top"
+        color-text="white"
+        primary-button="Learn more"
+        secondary-button="Buy"
+      ></hero-banner>
+      <hero-banner
+        src="./src/assets/image/image5.jpg"
+        desc="20 years of podcasts.  20 unforgettable shows."
+        position-button="bottom"
+        color-text="white"
+        primary-button="Explore the list"
+      ></hero-banner>
+      <hero-banner
+        src="./src/assets/image/image4.jpg"
+        logo="./src/assets/logo/tradein-logo.png"
+        desc="Get $170-$630 in credit when you trade in iPhone 12 or higher."
+        position-button="top"
+        primary-button="Get your estimate"
+      ></hero-banner>
+    </section>
+
+    <section class="hero-grid">
+      <hero-banner
+        src="./src/assets/image/image3-m.jpg"
+        title="iPad Pro"
+        desc="Unbelievably thin. Incredibly powerful"
+        position-button="top"
+        color-text="white"
+        primary-button="Learn more"
+        secondary-button="Buy"
+      ></hero-banner>
+      <hero-banner
+        src="./src/assets/image/image6-m.jpg"
+        logo="./src/assets/logo/card-logo.png"
+        desc="Get up to 3% Daily Cash Back with every purchase."
+        position-button="top"
+        primary-button="Get your estimate"
+      ></hero-banner>
+      <hero-banner
+        src="./src/assets/image/image7-m.jpg"
+        logo="./src/assets/logo/watch-logo.png"
+        desc="The instant classic"
+        position-button="top"
+        primary-button="Learn more"
+        secondary-button="Buy"
+      ></hero-banner>
+      <hero-banner
+        src="./src/assets/image/image8-m.jpg"
+        title="AirPods Pro 2"
+        desc="Now with a Hearing Aid feature."
+        color-text="white"
+        position-button="bottom"
+        primary-button="Learn more"
+        secondary-button="Buy"
+      ></hero-banner>
+    </section>
+
+    <auto-scroll></auto-scroll>
+
+    <!-- Footer -->
+    <main-footer></main-footer>
   </body>
 </html>
