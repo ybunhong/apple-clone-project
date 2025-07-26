@@ -34,7 +34,7 @@ export class AutoScroll extends BaseComponent {
   updateTemplate() {
     this.template = `
     <div class="slider">
-        <div class="slide-track">
+        <div class="slide-track" id="scroll-track">
             <div class="slide">
                 <img src='${img1}'/>
             </div>
@@ -74,9 +74,28 @@ export class AutoScroll extends BaseComponent {
             </div>
         </div>
     </div>
+    <div class="button-container">
+    <span class="bg-rounded-button">
+      <div class="play-button">
+        <icon-button id="scroll-toggle" icon="/src/assets/icons/pause-button.svg" toggle-icon="/src/assets/icons/play-button.svg" size="0.6"></icon-button>
+      </div>
+      </span>
+    </div>
     `;
 
     this.render();
+
+    const track = this.querySelector("#scroll-track");
+    const toggleButton = this.querySelector("#scroll-toggle");
+
+    let isScrolling = true;
+
+    if (track && toggleButton) {
+      toggleButton.addEventListener("click", () => {
+        isScrolling = !isScrolling;
+        track.style.animationPlayState = isScrolling ? "running" : "paused";
+      });
+    }
   }
 }
 
