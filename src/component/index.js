@@ -5,3 +5,4 @@ import "./footer/footer.js";
 import "./header/main-header.js";
 import "./accordion/accordion.js";
 import "./autoscroll/auto-scroll.js";
+import "./navigation-hover/navigation-hover.js";
