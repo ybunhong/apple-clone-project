@@ -1,0 +1,48 @@
+.navigation-toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.bg-navigation-container {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.navigation-items {
+  display: flex;
+  gap: 10%;
+  width: 100%;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-title {
+  font-size: 12px;
+  color: #afafaf;
+  font-weight: 500;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-item {
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dimmed-group .nav-item {
+  font-size: 12px;
+}

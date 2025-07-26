@@ -3,6 +3,7 @@ header {
   justify-content: center;
   width: 100%;
   background-color: #ffffff;
+  position: relative;
 }
 
 header section {
@@ -35,6 +36,14 @@ header a {
 
 .hamburger {
   display: none;
+}
+
+#overlay-nav {
+  position: absolute;
+  top: 100%; /* just below header */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Responsive */
