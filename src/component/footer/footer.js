@@ -193,15 +193,13 @@ Features are subject to change. Some features, applications, and services may no
             </div>
           </div>
 
-          <hr>
+          <hr class="divider" style="margin: 16px 0 16px 0">
 
           <div class="accordion-wrapper">
             ${accordionHTML}
           </div>
-
-          <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call <a href="#">1-800-MY-APPLE</a> (1-800-692-7753).</p>
-
-          <hr class="divider">
+            <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call <a href="#">1-800-MY-APPLE</a> (1-800-692-7753).</p>
+          <hr class="divider" style="margin: 16px 0 16px 0">
 
           <div class="last-footer">
             <p>Copyright © 2025 Apple Inc. All rights reserved</p>

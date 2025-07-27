@@ -7,26 +7,20 @@
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="../src/styles/iphone.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apple</title>
-    <link rel="icon" type="image/png" href="./src/assets/apple-title.png" />
+    <title>iPhone - Apple</title>
+    <link rel="icon" type="image/png" href="../src/assets/apple-title.png" />
   </head>
   <body>
-    <!-- Header-->
-
+    <!-- Header -->
     <main-header></main-header>
-    <!-- Hero Section -->
-    <h1>12</h1>
-    <h1>12</h1>
-    <h1>12</h1>
-    <h1>12</h1>
 
-    <h1>12</h1>
-    <h1>12</h1>
-    <section>
-      <div class="iphone1">
-        <p style="font-size: 48px; font-weight: 600">iPhone</p>
-        <p style="font-size: 24px; font-weight: 500">Designed to be loved</p>
+    <!-- Main Content -->
+    <section class="iphone-page">
+      <!-- Hero Section -->
+      <div class="max-width-container">
         <div class="iphone-container">
+          <p style="font-size: 48px; font-weight: 600">iPhone</p>
+          <p style="font-size: 24px; font-weight: 500">Designed to be loved</p>
           <hero-banner
             src="../src/assets/iphone-page/image1.jpg"
             position-button="bottom-right"
@@ -36,48 +30,170 @@
           ></hero-banner>
         </div>
       </div>
-      <div class="get-iphone">
-        <p style="font-size: 32px; font-weight: 500">Designed to be loved</p>
-        <div class="get-to-know-container">
-          <div class="get-to-know">
-            <hero-banner
-              src="../src/assets/iphone-page/image2.jpg"
-              position-button="bottom-right"
-              icon="../src/assets/icons/play-button.svg"
-              icon-size="0.8"
-              toggle-icon="../src/assets/icons/pause-button.svg"
-            ></hero-banner>
+
+      <!-- Get to Know Section -->
+      <div class="max-width-container">
+        <div class="get-iphone">
+          <p style="font-size: 32px; font-weight: 500">Designed to be loved</p>
+          <div class="get-to-know-container">
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image2.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image3.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image4.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image5.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image6.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image7.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image8.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
+            <div class="get-to-know">
+              <hero-banner
+                src="../src/assets/iphone-page/image9.jpg"
+                position-button="bottom-right"
+                icon="../src/assets/icons/rounded-plus.svg"
+                icon-size="1.5"
+              ></hero-banner>
+            </div>
           </div>
-          <div class="get-to-know">
-            <hero-banner
-              src="../src/assets/iphone-page/image2.jpg"
-              position-button="bottom-right"
-              icon="../src/assets/icons/play-button.svg"
-              icon-size="0.8"
-              toggle-icon="../src/assets/icons/pause-button.svg"
-            ></hero-banner>
+          <div class="chervorn-container">
+            <icon-button
+              class="chervorn-right"
+              icon="../src/assets/icons/chevorn.svg"
+            ></icon-button>
+            <icon-button
+              class="chervorn-left"
+              icon="../src/assets/icons/chevorn.svg"
+            ></icon-button>
           </div>
-          <div class="get-to-know">
-            <hero-banner
-              src="../src/assets/iphone-page/image2.jpg"
-              position-button="bottom-right"
-              icon="../src/assets/icons/play-button.svg"
-              icon-size="0.8"
-              toggle-icon="../src/assets/icons/pause-button.svg"
-            ></hero-banner>
+        </div>
+      </div>
+
+      <!-- iPhone Product Lineup -->
+      <div class="max-width-container">
+        <div class="iphone-product">
+          <p style="font-size: 24px; font-weight: 500">Explore the lineup</p>
+          <p>
+            <a href="#" style="text-decoration: none; font-size: 12px"
+              >Compare all models ></a
+            >
+          </p>
+          <display-iphone></display-iphone>
+          <div class="chervorn-container">
+            <icon-button
+              class="chervorn-right"
+              icon="../src/assets/icons/chevorn.svg"
+            ></icon-button>
+            <icon-button
+              class="chervorn-left"
+              icon="../src/assets/icons/chevorn.svg"
+            ></icon-button>
           </div>
-          <div class="get-to-know">
+        </div>
+      </div>
+
+      <!-- Video Section -->
+      <div class="max-width-container">
+        <div class="video-container">
+          <p style="font-size: 48px; font-weight: 500">Take a closer look.</p>
+          <div class="product-video">
             <hero-banner
-              src="../src/assets/iphone-page/image2.jpg"
-              position-button="bottom-right"
-              icon="../src/assets/icons/play-button.svg"
-              icon-size="0.8"
-              toggle-icon="../src/assets/icons/pause-button.svg"
+              src="/src/assets/explore/video1.jpg"
+              position-button="left"
+              title="A guided Tour of <br>iPhone 16 & iPhone 16 Pro"
+              primary-button="Watch the film"
+              color-text="white"
             ></hero-banner>
           </div>
         </div>
       </div>
+
+      <!-- iPhone Essentials Section -->
+      <div class="max-width-container">
+        <div class="iphone-essentails">
+          <p style="font-size: 48px; font-weight: 500">iPhone essentials.</p>
+          <div class="product-esstentails">
+            <hero-banner
+              src="/src/assets/explore/essentials1.jpg"
+              position-button="top"
+              title="iPhone accessories"
+              desc="Explore colorful cases, USBC power adapters,<br>MagSafe accessories, and more.<br> <p><a href='#'>Shop iPhone accessories ></a></p>"
+            ></hero-banner>
+            <hero-banner
+              src="/src/assets/explore/essentials1.jpg"
+              position-button="top"
+              title="iPhone accessories"
+              desc="Attach one to your keys. Put another in your<br>backpack. If they are misplaced, just use the Find My app.<br> <p><a href='#'>Buy ></a></p>"
+            ></hero-banner>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-width-container">
+        <div class="video-container">
+          <p style="font-size: 48px; font-weight: 500">Switch to iPhone</p>
+          <div class="product-video">
+            <hero-banner
+              src="/src/assets/explore/video2.jpg"
+              position-button="top"
+              title="See how easy it is to switch.<br> <p style='color:pink'>Upgrade to iPhone.</p>"
+              primary-button="Learn more"
+              color-text="violet"
+            ></hero-banner>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-width-container">
+        <navigation-hover></navigation-hover>
+      </div>
     </section>
+
     <!-- Footer -->
     <main-footer></main-footer>
   </body>
