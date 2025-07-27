@@ -31,18 +31,18 @@ export class MainHeader extends BaseComponent {
 
   updateTemplate() {
     const navItems = [
-      { href: "index.html", label: "Store" },
-      { href: "#", label: "Mac" },
-      { href: "#", label: "iPhone" },
-      { href: "#", label: "Watch" },
-      { href: "#", label: "iPad" },
-      { href: "#", label: "iPhone" },
-      { href: "#", label: "Watch" },
-      { href: "#", label: "Vision" },
-      { href: "#", label: "AirPods" },
-      { href: "#", label: "Entertainment" },
-      { href: "#", label: "Accessories" },
-      { href: "#", label: "Support" },
+      { href: "/index.html", label: "Store" },
+      { href: "/pages/iphone.html", label: "Mac" },
+      { href: "/pages/iphone.html", label: "iPhone" },
+      { href: "/pages/iphone.html", label: "Watch" },
+      { href: "/pages/iphone.html", label: "iPad" },
+      { href: "/pages/iphone.html", label: "iPhone" },
+      { href: "/pages/iphone.html", label: "Watch" },
+      { href: "/pages/iphone.html", label: "Vision" },
+      { href: "/pages/iphone.html", label: "AirPods" },
+      { href: "/pages/iphone.html", label: "Entertainment" },
+      { href: "/pages/iphone.html", label: "Accessories" },
+      { href: "/pages/iphone.html", label: "Support" },
     ];
 
     const navList = navItems
@@ -54,7 +54,7 @@ export class MainHeader extends BaseComponent {
       <section>
         <!-- Left -->
         <div class="header-toolbar">
-          <icon-button class="apple-logo" icon="${appleLogo}" size="0.8"></icon-button>
+          <icon-button class="apple-logo" icon="${appleLogo}" size="0.8" href="/index.html"></icon-button>
         </div>
 
         <!-- Center -->
