@@ -7,3 +7,4 @@ import "./accordion/accordion.js";
 import "./autoscroll/auto-scroll.js";
 import "./navigation-hover/navigation-hover.js";
 import "./carosel/carosel-swipe.js";
+import "./display-iphone/display-iphone.js";
