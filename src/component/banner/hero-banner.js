@@ -7,6 +7,9 @@ export class HeroBanner extends BaseComponent {
     return [
       "title",
       "desc",
+      "icon",
+      "icon-size",
+      "toggle-icon",
       "position-button",
       "primary-button",
       "secondary-button",
@@ -28,11 +31,27 @@ export class HeroBanner extends BaseComponent {
     this.logo = "";
     this.colorfulText = "";
     this.colorText = "";
+    this.icon = "";
+    this.iconSize = "";
+    this.toggleIcon = "";
+
+    // Bind the method for event listener removal
+    this.updateResponsiveSrc = this.updateResponsiveSrc.bind(this);
   }
 
   connectedCallback() {
     super.connectedCallback();
-    this.updateTemplate();
+    this.updateResponsiveSrc(); // set initial src based on screen size
+
+    // Listen for window resize and page load to update image dynamically
+    window.addEventListener("resize", this.updateResponsiveSrc);
+    window.addEventListener("load", this.updateResponsiveSrc);
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener("resize", this.updateResponsiveSrc);
+    window.removeEventListener("load", this.updateResponsiveSrc);
+    super.disconnectedCallback();
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -56,6 +75,15 @@ export class HeroBanner extends BaseComponent {
         case "src":
           this.src = newValue || "";
           break;
+        case "icon":
+          this.icon = newValue || "";
+          break;
+        case "icon-size":
+          this.iconSize = newValue || "";
+          break;
+        case "toggle-icon":
+          this.toggleIcon = newValue || "";
+          break;
         case "logo":
           this.logo = newValue || "";
           break;
@@ -67,6 +95,27 @@ export class HeroBanner extends BaseComponent {
           break;
       }
       this.updateTemplate();
+    }
+  }
+
+  updateResponsiveSrc() {
+    const smallSrc = "../assets/iphone-page/image1-small.jpg";
+    const largeSrc = "../assets/iphone-page/image1.jpg";
+
+    // Only update src internally if user has not set src explicitly (or is set to default largeSrc)
+    // This avoids overwriting user-defined src attribute
+    if (!this.hasAttribute("src") || this.src === largeSrc) {
+      if (window.innerWidth <= 835) {
+        if (this.src !== smallSrc) {
+          this.src = smallSrc;
+          this.updateTemplate();
+        }
+      } else {
+        if (this.src !== largeSrc) {
+          this.src = largeSrc;
+          this.updateTemplate();
+        }
+      }
     }
   }
 
@@ -113,6 +162,11 @@ export class HeroBanner extends BaseComponent {
             ${
               this.colorfulText
                 ? `<p class="hero-colorful-text">${this.colorfulText}</p>`
+                : ""
+            }
+            ${
+              this.icon
+                ? `<icon-button icon="${this.icon}" size="${this.iconSize}" toggle-icon="${this.toggleIcon}"></icon-button>`
                 : ""
             }
           </div>
