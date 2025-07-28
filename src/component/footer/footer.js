@@ -65,7 +65,7 @@ export class MainFooter extends BaseComponent {
       .join("");
     this.template = `
       <footer>
-        <section>
+        <section class="footer-container">
           <div class="footer-lot-text">
             <p>1. Available for Qualified Purchasers only. Qualified Purchasers purchasing an eligible Mac/iPad (“Eligible Product”) with eligible AirPods/accessory (“Promotion Product”) from a Qualifying Location through September 30, 2025 will receive Promotion Savings (up to $199, not to exceed the price of the Promotion Product). Customers will be charged for all items in their cart, including the Promotion Product. Only one Promotion Product per Eligible Product per Qualified Purchaser. Offer subject to availability. While supplies last. Additional restrictions apply. View full offer terms here.<br><br>
 2. Clean Up is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac with M1 and later, as part of an iOS 18, iPadOS 18, and macOS Sequoia update.<br><br>
