@@ -8,3 +8,5 @@ import "./autoscroll/auto-scroll.js";
 import "./navigation-hover/navigation-hover.js";
 import "./carosel/carosel-swipe.js";
 import "./display-iphone/display-iphone.js";
+import "./icon-input/icon-input.js";
+import "./search-panel/search-panel.js";

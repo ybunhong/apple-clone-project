@@ -1,0 +1,25 @@
+.product-item .button-text {
+  font-weight: 600;
+}
+
+.product-item img {
+  transform: rotate(90deg);
+}
+
+.product-item {
+  display: flex;
+  gap: 16px;
+}
+
+.search-panel {
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.search-panel.open {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}

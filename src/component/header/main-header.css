@@ -46,6 +46,15 @@ header a {
   z-index: 1000;
 }
 
+#search-panel {
+  position: absolute;
+  top: 100%; /* just below header */
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  background-color: white;
+}
+
 /* Responsive */
 @media (max-width: 835px) {
   .hamburger {
