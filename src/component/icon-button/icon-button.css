@@ -1,0 +1,33 @@
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-button:disabled,
+.icon-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.icon-button .icon-image {
+  display: inline-block;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.icon-button .button-text {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}

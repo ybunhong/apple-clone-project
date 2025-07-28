@@ -1,0 +1,20 @@
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  column-gap: 16px;
+  row-gap: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 875px) {
+  .hero-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

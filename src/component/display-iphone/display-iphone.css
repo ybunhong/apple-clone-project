@@ -1,0 +1,39 @@
+.product-parent {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: fit-content;
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.product-container > img {
+  width: 190px;
+  height: 242px;
+}
+
+.product-btn {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.color-indicator > button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.product-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}

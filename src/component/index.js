@@ -1,0 +1,10 @@
+import "./base-button/base-button.js";
+import "./icon-button/icon-button.js";
+import "./banner/hero-banner.js";
+import "./footer/footer.js";
+import "./header/main-header.js";
+import "./accordion/accordion.js";
+import "./autoscroll/auto-scroll.js";
+import "./navigation-hover/navigation-hover.js";
+import "./carosel/carosel-swipe.js";
+import "./display-iphone/display-iphone.js";

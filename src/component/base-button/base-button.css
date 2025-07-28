@@ -1,0 +1,37 @@
+.button {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+  font-weight: 100;
+  display: inline-block;
+  border-radius: 9999px;
+}
+
+.button-primary {
+  background-color: #0071e3;
+  color: white;
+  border: 2px solid #0071e3;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: #0071e3;
+  border: 2px solid #0071e3;
+}
+
+.button-regular {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.button-status {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
