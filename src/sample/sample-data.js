@@ -128,7 +128,7 @@ export const products = [
 export const sampleSets = {
   shopAndLearn: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Store</p>
         <p>Mac</p>
         <p>iPad</p>
@@ -145,7 +145,7 @@ export const sampleSets = {
 
   appleWallet: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Wallet</p>
         <p>Apple Card</p>
         <p>Apple Pay</p>
@@ -156,7 +156,7 @@ export const sampleSets = {
 
   account: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Manage Your Apple Account</p>
         <p>Apple Store Account</p>
         <p>iCloud.com</p>
@@ -166,7 +166,7 @@ export const sampleSets = {
 
   entertainment: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Apple One</p>
         <p>Apple TV+</p>
         <p>Apple Music</p>
@@ -182,7 +182,7 @@ export const sampleSets = {
 
   appleStore: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Find a Store</p>
         <p>Genius Bar</p>
         <p>Today at Apple</p>
@@ -201,7 +201,7 @@ export const sampleSets = {
 
   forBusiness: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Apple and Business</p>
         <p>Shop for Business</p>
       </div>`,
@@ -210,7 +210,7 @@ export const sampleSets = {
 
   forEducation: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Apple and Education</p>
         <p>Shop for K-12</p>
         <p>Shop for College</p>
@@ -220,7 +220,7 @@ export const sampleSets = {
 
   forHealthcare: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Apple in Heathcare</p>
         <p>Mac in Heathcare</p>
         <p>Heath on Apple Watch</p>
@@ -231,7 +231,7 @@ export const sampleSets = {
 
   forGovernment: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Shop for Government</p>
         <p>Shop Veterns and Military</p>
       </div>`,
@@ -240,7 +240,7 @@ export const sampleSets = {
 
   appleValues: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Accessibilty</p>
         <p>Education</p>
         <p>Enviroment</p>
@@ -254,7 +254,7 @@ export const sampleSets = {
 
   aboutApple: [
     {
-      "desc-label": `<div style="display:flex; flex-direction:column;">
+      "desc-label": `<div style="display:flex; flex-direction:column; gap:16px; padding: 8px 0 8px 0">
         <p>Newsroom</p>
         <p>Apple Leadership</p>
         <p>Career Opportunities</p>

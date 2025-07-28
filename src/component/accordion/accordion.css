@@ -19,10 +19,12 @@
 }
 
 .accordion-content {
+  display: flex;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease, padding 0.3s ease, margin-top 0.3s ease;
   box-sizing: border-box;
+  gap: 16px;
 }
 
 .accordion.open .accordion-content {

@@ -3,6 +3,8 @@
   grid-template-columns: repeat(2, 2fr);
   column-gap: 16px;
   row-gap: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 body {
