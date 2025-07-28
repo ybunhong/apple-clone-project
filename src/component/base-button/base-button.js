@@ -66,13 +66,16 @@ export class BaseButton extends BaseComponent {
   updateTemplate() {
     const baseClass = "button";
     const variantClass = `button-${this.variant}`;
-    const sizeClass = this.type === "status" ? "button-status" : "button-regular";
+    const sizeClass =
+      this.type === "status" ? "button-status" : "button-regular";
     const classes = `${baseClass} ${variantClass} ${sizeClass}`;
 
     if (this.href) {
-      this.template = `<a href="${this.href}" class="${classes}">${this.label}</a>`;
+      this.template = `<a style="text-decoration: none;" href="${this.href}" class="${classes}">${this.label}</a>`;
     } else {
-      this.template = `<button class="${classes}" ${this.disabled ? "disabled" : ""}>${this.label}</button>`;
+      this.template = `<button class="${classes}" ${
+        this.disabled ? "disabled" : ""
+      }>${this.label}</button>`;
     }
 
     this.render();

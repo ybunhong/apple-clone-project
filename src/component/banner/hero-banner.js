@@ -13,6 +13,8 @@ export class HeroBanner extends BaseComponent {
       "position-button",
       "primary-button",
       "secondary-button",
+      "href-primary",
+      "href-secondary",
       "src",
       "logo",
       "color-text",
@@ -27,6 +29,8 @@ export class HeroBanner extends BaseComponent {
     this.positionButton = "";
     this.primaryButton = "";
     this.secondaryButton = "";
+    this.hrefPrimary = "";
+    this.hrefSecondary = "";
     this.src = "";
     this.logo = "";
     this.colorfulText = "";
@@ -34,24 +38,10 @@ export class HeroBanner extends BaseComponent {
     this.icon = "";
     this.iconSize = "";
     this.toggleIcon = "";
-
-    // Bind the method for event listener removal
-    this.updateResponsiveSrc = this.updateResponsiveSrc.bind(this);
   }
 
   connectedCallback() {
     super.connectedCallback();
-    this.updateResponsiveSrc(); // set initial src based on screen size
-
-    // Listen for window resize and page load to update image dynamically
-    window.addEventListener("resize", this.updateResponsiveSrc);
-    window.addEventListener("load", this.updateResponsiveSrc);
-  }
-
-  disconnectedCallback() {
-    window.removeEventListener("resize", this.updateResponsiveSrc);
-    window.removeEventListener("load", this.updateResponsiveSrc);
-    super.disconnectedCallback();
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -71,6 +61,12 @@ export class HeroBanner extends BaseComponent {
           break;
         case "secondary-button":
           this.secondaryButton = newValue || "";
+          break;
+        case "href-primary":
+          this.hrefPrimary = newValue || "";
+          break;
+        case "href-secondary":
+          this.hrefSecondary = newValue || "";
           break;
         case "src":
           this.src = newValue || "";
@@ -95,27 +91,6 @@ export class HeroBanner extends BaseComponent {
           break;
       }
       this.updateTemplate();
-    }
-  }
-
-  updateResponsiveSrc() {
-    const smallSrc = "../assets/iphone-page/image1-small.jpg";
-    const largeSrc = "../assets/iphone-page/image1.jpg";
-
-    // Only update src internally if user has not set src explicitly (or is set to default largeSrc)
-    // This avoids overwriting user-defined src attribute
-    if (!this.hasAttribute("src") || this.src === largeSrc) {
-      if (window.innerWidth <= 835) {
-        if (this.src !== smallSrc) {
-          this.src = smallSrc;
-          this.updateTemplate();
-        }
-      } else {
-        if (this.src !== largeSrc) {
-          this.src = largeSrc;
-          this.updateTemplate();
-        }
-      }
     }
   }
 
@@ -147,12 +122,12 @@ export class HeroBanner extends BaseComponent {
                 ? `<div class="hero-buttons">
                     ${
                       this.primaryButton
-                        ? `<base-button label="${this.primaryButton}" variant="primary"></base-button>`
+                        ? `<base-button label="${this.primaryButton}" variant="primary" href="${this.hrefPrimary}"></base-button>`
                         : ""
                     }
                     ${
                       this.secondaryButton
-                        ? `<base-button label="${this.secondaryButton}" variant="secondary"></base-button>`
+                        ? `<base-button label="${this.secondaryButton}" variant="secondary" href="${this.hrefSecondary}"></base-button>`
                         : ""
                     }
                   </div>`
