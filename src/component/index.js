@@ -10,3 +10,4 @@ import "./carosel/carosel-swipe.js";
 import "./display-iphone/display-iphone.js";
 import "./icon-input/icon-input.js";
 import "./search-panel/search-panel.js";
+import "./shopping-cart-panel/shopping-cart-panel.js";

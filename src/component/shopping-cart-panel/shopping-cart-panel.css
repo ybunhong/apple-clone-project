@@ -1,0 +1,34 @@
+.cart-item .button-text {
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  gap: 16px;
+}
+
+.filledcart-panelcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-panelcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 5% 0 32px 0;
+}
+
+.shoppingcart-panel {
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.shoppingcart-panel.open {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}

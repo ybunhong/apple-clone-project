@@ -65,13 +65,14 @@ export class MainHeader extends BaseComponent {
         <!-- Right -->
         <div class="header-toolbar">
           <icon-button class="search" icon="${search}" size="0.8" action="searchPanelClose"></icon-button>
-          <icon-button class="shopping-cart" icon="${shoppingCart}" size="0.8"></icon-button>
+          <icon-button class="shopping-cart" icon="${shoppingCart}" size="0.8" action="shoppingCartPanelClose"></icon-button>
           <icon-button class="hamburger" icon="${hamburger}" size="0.8"></icon-button>
         </div>
       </section>
 
       <!-- Hidden Panels -->
       <navigation-hover id="overlay-nav"></navigation-hover>
+      <shoppingcart-panel id="shoppingcart-panel"></shoppingcart-panel>
       <search-panel id="search-panel"></search-panel>
     </header>
     `;
