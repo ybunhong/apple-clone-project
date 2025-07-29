@@ -11,3 +11,4 @@ import "./display-iphone/display-iphone.js";
 import "./icon-input/icon-input.js";
 import "./search-panel/search-panel.js";
 import "./shopping-cart-panel/shopping-cart-panel.js";
+import "./menu-panel/menu-panel.js";

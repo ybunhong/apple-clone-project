@@ -66,7 +66,7 @@ export class MainHeader extends BaseComponent {
         <div class="header-toolbar">
           <icon-button class="search" icon="${search}" size="0.8" action="searchPanelClose"></icon-button>
           <icon-button class="shopping-cart" icon="${shoppingCart}" size="0.8" action="shoppingCartPanelClose"></icon-button>
-          <icon-button class="hamburger" icon="${hamburger}" size="0.8"></icon-button>
+          <icon-button class="hamburger" icon="${hamburger}" size="0.8" action="menuPanelClose"></icon-button>
         </div>
       </section>
 
@@ -74,6 +74,7 @@ export class MainHeader extends BaseComponent {
       <navigation-hover id="overlay-nav"></navigation-hover>
       <shoppingcart-panel id="shoppingcart-panel"></shoppingcart-panel>
       <search-panel id="search-panel"></search-panel>
+      <menu-panel id="menu-panel"></menu-panel>
     </header>
     `;
 
@@ -106,6 +107,43 @@ export class MainHeader extends BaseComponent {
     overlay.addEventListener("mouseleave", () => {
       overlay.style.display = "none";
       header.classList.remove("active-overlay");
+    });
+
+    const panels = {
+      menu: this.querySelector("#menu-panel"),
+      search: this.querySelector("#search-panel"),
+      shoppingcart: this.querySelector("#shoppingcart-panel"),
+      overlayNav: this.querySelector("#overlay-nav"),
+    };
+
+    // Show only the specified panel, hide others
+    const showOnly = (panelToShow) => {
+      Object.entries(panels).forEach(([key, panel]) => {
+        if (!panel) return;
+        if (key === panelToShow) {
+          panel.style.display = "block";
+        } else {
+          panel.style.display = "none";
+        }
+      });
+    };
+
+    // Listen for toggle events and show the corresponding panel
+    this.addEventListener("toggle-panel", (event) => {
+      const panelName = event.detail?.panel;
+      switch (panelName) {
+        case "menuPanelClose":
+          showOnly("menu");
+          break;
+        case "searchPanelClose":
+          showOnly("search");
+          break;
+        case "shoppingCartPanelClose":
+          showOnly("shoppingcart");
+          break;
+        default:
+          showOnly(null); // hide all
+      }
     });
   }
 }

@@ -40,7 +40,8 @@ header a {
 
 #search-panel,
 #shoppingcart-panel,
-#overlay-nav {
+#overlay-nav,
+#menu-panel {
   position: absolute;
   top: 100%; /* just below header */
   left: 0;
