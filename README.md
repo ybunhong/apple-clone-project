@@ -65,29 +65,29 @@ This sets up Git hooks on your local machine to enforce commit message rules usi
 
 This project follows a modular and scalable file organization to support reusable Web Components, static assets, styles, and utility logic. Below is an overview of the key folders and their responsibilities.
 
-## 🧠 [Information Architecture] (https://www.figma.com/board/uZPFm8CR4eheu3M30lScnL/IA-iPhone?node-id=0-1&p=f&t=wR5ujmPn4nYaBGDv-0)
+## [Information Architecture] (https://www.figma.com/board/uZPFm8CR4eheu3M30lScnL/IA-iPhone?node-id=0-1&p=f&t=wR5ujmPn4nYaBGDv-0)
 
 ## [Figma](https://www.figma.com/design/0fCpkIA6kjDtdP5xNYVoE3/AppleCloneProject?node-id=530-469&p=f&t=5fiZK0YGdK59WrR0-0)
 
-### 📂 src/
+### src/
 
 The `src/` folder contains all application logic, components, styles, and assets.
 
 ---
 
-#### 📁 src/assets/
+#### src/assets/
 
 Static resources used across the project, including:
 
-- 🖼️ **Images**
-- 📎 **Icons**
-- 🧬 **SVGs**
+- **Images**
+- **Icons**
+- **SVGs**
 
 These are referenced by components and pages for visual elements.
 
 ---
 
-#### 📁 src/components/
+#### src/components/
 
 All reusable Web Components are stored here and organized into two categories:
 
@@ -106,7 +106,7 @@ Each component typically resides in its own folder and may include:
 
 ---
 
-#### 📁 src/sample/
+#### src/sample/
 
 Contains mock or static data used for development and testing purposes.
 
@@ -118,7 +118,7 @@ Contains mock or static data used for development and testing purposes.
 
 ---
 
-#### 📁 src/style/
+#### src/style/
 
 Contains global styling resources used across the application.
 
@@ -134,7 +134,7 @@ The main entry file `index.css` imports everything from both `base/` and `utils/
 
 ---
 
-#### 📁 src/utils/
+#### src/utils/
 
 JavaScript helper functions and utilities.
 
@@ -144,25 +144,25 @@ Typical use cases include:
 - Formatting dates
 - String and number manipulation
 
-## 🧩 Git Strategy & Conventions
+## Git Strategy & Conventions
 
 To ensure clarity and consistency in this project follows standardized **branch naming** and **commit message** conventions.
 
 ---
 
-### 🌿 Branch Naming Convention
+### Branch Naming Convention
 
 - **Format:** `<name_type>`
 - **Style:** lowercase with underscores
 
-#### ✅ Examples:
+#### Examples:
 
 - `button_component`
 - `home_page`
 - `fix_login_bug`
 - `signup_flow_update`
 
-#### 🔁 Best Practices:
+#### Best Practices:
 
 - **Be Descriptive**  
   Use names that clearly describe the purpose of the branch.
@@ -176,6 +176,6 @@ To ensure clarity and consistency in this project follows standardized **branch 
 
 ---
 
-### 📝 Commit Message Convention
+### Commit Message Convention
 
 We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) enforced by **CommitLint**.
