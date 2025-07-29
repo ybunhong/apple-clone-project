@@ -5,16 +5,6 @@
   padding: 32px 0 32px 0;
 }
 
-.max-width-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1024px;
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .iphone-container {
   width: 100%;
   height: fit-content;

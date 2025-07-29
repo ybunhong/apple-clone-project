@@ -56,7 +56,7 @@ class SearchPanel extends BaseComponent {
             icon-input="/src/assets/icons/search.svg"
             text="Search apple.com"
           ></icon-input>
-        <p style="font-size:14px; padding: 8px">Quick Link<p>
+        <p style="font-size:14px; padding: 8px">Quick Link</p>
         <div class="product-list">
           ${productItems}
         </div>
