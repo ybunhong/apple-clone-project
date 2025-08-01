@@ -1,8 +1,6 @@
 # Web-clone-Apple
 
-# Porsche Store Frontend Clone
-
-This project is a **frontend clone of the Porsche online store**, built entirely with **vanilla JavaScript, HTML, and CSS**. It aims to replicate the layout, user experience, and core functionality of a modern e-commerce website — all without relying on frameworks — to strengthen foundational web development skills.
+This project is a **frontend clone of the Apple Website**, built entirely with **vanilla JavaScript, HTML, and CSS**. It aims to replicate the layout, user experience of a modern e-commerce website — all without relying on frameworks — to strengthen foundational web development skills.
 
 In addition to coding, the project emphasizes **Information Architecture (IA)**: a focus on organizing files, components, and logic in a way that’s maintainable, scalable, and easy for team collaboration. The structure aligns with how professional development teams manage real-world applications.
 
