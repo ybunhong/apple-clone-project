@@ -87,16 +87,7 @@ These are referenced by components and pages for visual elements.
 
 #### src/components/
 
-All reusable Web Components are stored here and organized into two categories:
-
-- **layout/**  
-  Composite components built from smaller UI parts.  
-  _Example: `product-card`_
-
-- **ui/**  
-  Atomic UI elements or base components.  
-  _Example: `base-button`, `base-input`_
-
+All reusable Web Components are stored here and organized in this folder.
 Each component typically resides in its own folder and may include:
 
 - `.js` file (required)
@@ -118,17 +109,7 @@ Contains mock or static data used for development and testing purposes.
 
 #### src/style/
 
-Contains global styling resources used across the application.
-
-- **base/**: Design tokens and foundational styles  
-  _(colors, typography, reset, etc.)_
-
-- **utils/**: Utility classes  
-  _(e.g., spacing, shadows, z-index helpers)_
-
-- **style/**: Page-specific styles
-
-The main entry file `index.css` imports everything from both `base/` and `utils/`.
+Contains page styling resources, The main entry file `index.css` imports root .
 
 ---
 
