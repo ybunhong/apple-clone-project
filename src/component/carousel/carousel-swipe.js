@@ -1,4 +1,4 @@
-import "./carosel-swipe.css";
+import "./carousel-swipe.css";
 import "../index.js";
 import { BaseComponent } from "../base-component.js";
 

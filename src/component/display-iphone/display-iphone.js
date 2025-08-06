@@ -1,7 +1,7 @@
 import "./display-iphone.css";
 import "../index.js";
 import { BaseComponent } from "../base-component.js";
-import { products } from "../../sample/sample-data.js";
+import { products } from "../../data/sample-data.js";
 
 export class DisplayIphone extends BaseComponent {
   static get observedAttributes() {

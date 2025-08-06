@@ -14,6 +14,10 @@ p {
   margin: 0;
 }
 
+/* 
+Container with a max width of 1024px, centered horizontally,
+using flex column layout and horizontal padding of 16px.
+*/
 .max-width-container {
   display: flex;
   flex-direction: column;

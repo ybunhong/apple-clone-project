@@ -2,6 +2,48 @@ import "../index.js";
 import "./hero-banner.css";
 import { BaseComponent } from "../base-component.js";
 
+/**
+ * HeroBanner Web Component
+ *
+ * Usage in HTML:
+ * <hero-banner
+ *   title="Welcome to Our Store"
+ *   desc="Discover amazing deals and exclusive offers."
+ *   src="/assets/images/hero.jpg"
+ *   logo="/assets/images/logo.svg"
+ *   color-text="#333"
+ *   colorful-text="Shop Now & Save Big!"
+ *   primary-button="Shop Now"
+ *   href-primary="/shop"
+ *   secondary-button="Learn More"
+ *   href-secondary="/about"
+ *   position-button="center"
+ *   icon="/assets/icons/play.svg"
+ *   icon-size="1.2"
+ *   toggle-icon="/assets/icons/pause.svg"
+ * ></hero-banner>
+ *
+ * Attributes:
+ * - title (string): Main heading text
+ * - desc (string): Description text below the title
+ * - src (string): Background image for the hero section
+ * - logo (string): Optional logo image shown above the title
+ * - color-text (string): Color for title and description text
+ * - colorful-text (string): Optional extra text shown below the buttons (often styled differently)
+ * - primary-button (string): Label for the primary action button
+ * - href-primary (string): Link for the primary button
+ * - secondary-button (string): Label for the secondary action button
+ * - href-secondary (string): Link for the secondary button
+ * - position-button (string): Controls layout of hero content ("center", "left", "right", etc.)
+ * - icon (string): Optional icon shown as an interactive element
+ * - icon-size (string | number): Size of the icon
+ * - toggle-icon (string): Alternate icon to toggle with when interacted
+ *
+ * Notes:
+ * - If neither primary nor secondary buttons are provided, the button area is hidden.
+ * - The background image (`src`) and icons should use valid URLs or paths.
+ */
+
 export class HeroBanner extends BaseComponent {
   static get observedAttributes() {
     return [

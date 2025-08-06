@@ -44,6 +44,13 @@
   border-radius: 50%;
 }
 
+/*Animation:
+- @keyframes scroll: Moves the slide track left continuously to simulate infinite sliding
+
+Important:
+- Adjust `calc(-418px * 6)` in @keyframes if you change slide width or number of visible slides
+*/
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
