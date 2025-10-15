@@ -181,7 +181,7 @@ export class HeroBanner extends BaseComponent {
                 ? `<p class="hero-colorful-text">${this.colorfulText}</p>`
                 : ""
             }
-            ${
+            ${ 
               this.icon
                 ? `<icon-button icon="${this.icon}" size="${this.iconSize}" toggle-icon="${this.toggleIcon}"></icon-button>`
                 : ""

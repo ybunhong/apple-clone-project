@@ -3,29 +3,29 @@ export const products = [
     name: "iPhone 16 Pro",
     description: "The ultimate iPhone.",
     price: "From $999 or $41.62/mo. for 24 mo.***",
-    image: "/src/assets/explore/image1.png",
+    image: "/assets/explore/image1.png",
     learnMoreLink: "#",
     buyLink: "#",
     specs: [
       {
-        icon: "/src/assets/logo/apple-intelligence.png",
+        icon: "/assets/logo/apple-intelligence.png",
         label: "Apple Intelligence",
       },
       {
-        icon: "/src/assets/logo/chip-A18-pro.png",
+        icon: "/assets/logo/chip-A18-pro.png",
         label: "A18 Pro chip with 6-core GPU",
       },
       {
-        icon: "/src/assets/logo/camera-control.png",
+        icon: "/assets/logo/camera-control.png",
         label: "Camera Control",
       },
       {
-        icon: "/src/assets/logo/camera-16pro.png",
+        icon: "/assets/logo/camera-16pro.png",
         label:
           "Pro camera system<br>48MP Fusion camera<br>5x Telephoto<br>48MP Ultra Wide camera<br>Visual intelligence",
       },
       {
-        icon: "/src/assets/logo/battery.png",
+        icon: "/assets/logo/battery.png",
         label: "Up to 33 hours video playback",
       },
     ],
@@ -34,29 +34,29 @@ export const products = [
     name: "iPhone 16",
     description: "A total powerhouse.",
     price: "From $799 or $33.29/mo. for 24 mo.***",
-    image: "/src/assets/explore/image2.png",
+    image: "/assets/explore/image2.png",
     learnMoreLink: "#",
     buyLink: "#",
     specs: [
       {
-        icon: "/src/assets/logo/apple-intelligence.png",
+        icon: "/assets/logo/apple-intelligence.png",
         label: "Apple Intelligence",
       },
       {
-        icon: "/src/assets/logo/chip-A18-pro.png",
+        icon: "/assets/logo/chip-A18-pro.png",
         label: "A18 chip with 5-core GPU",
       },
       {
-        icon: "/src/assets/logo/camera-control.png",
+        icon: "/assets/logo/camera-control.png",
         label: "Camera Control",
       },
       {
-        icon: "/src/assets/logo/camera-16pro.png",
+        icon: "/assets/logo/camera-16pro.png",
         label:
           "Advanced dual-camera system<br>48MP Fusion camera<br>2x Telephoto<br>12MP Ultra Wide camera<br>Visual intelligence",
       },
       {
-        icon: "/src/assets/logo/battery.png",
+        icon: "/assets/logo/battery.png",
         label: "Up to 27 hours video playback",
       },
     ],
@@ -65,29 +65,29 @@ export const products = [
     name: "iPhone 16e",
     description: "Latest iPhone. Greatest price.",
     price: "From $599 or $24.95/mo. for 24 mo.***",
-    image: "/src/assets/explore/image3.png",
+    image: "/assets/explore/image3.png",
     learnMoreLink: "#",
     buyLink: "#",
     specs: [
       {
-        icon: "/src/assets/logo/apple-intelligence.png",
+        icon: "/assets/logo/apple-intelligence.png",
         label: "Apple Intelligence",
       },
       {
-        icon: "/src/assets/logo/chip-A18-pro.png",
+        icon: "/assets/logo/chip-A18-pro.png",
         label: "A18 chip with 4-core GPU",
       },
       {
-        icon: "/src/assets/logo/camera-16pro.png",
+        icon: "/assets/logo/camera-16pro.png",
         label:
           "2-in-1 camera system<br>48MP Fusion camera<br>2x Telephoto<br>Visual intelligence",
       },
       {
-        icon: "/src/assets/logo/camera-control.png",
+        icon: "/assets/logo/camera-control.png",
         label: "Super Retina XDR display",
       },
       {
-        icon: "/src/assets/logo/battery.png",
+        icon: "/assets/logo/battery.png",
         label: "Up to 26 hours video playback",
       },
     ],
@@ -96,29 +96,29 @@ export const products = [
     name: "iPhone 15",
     description: "As amazing as ever.",
     price: "From $699 or $29.12/mo. for 24 mo.***",
-    image: "/src/assets/explore/image4.png",
+    image: "/assets/explore/image4.png",
     learnMoreLink: "#",
     buyLink: "#",
     specs: [
       {
-        icon: "/src/assets/logo/apple-intelligence.png",
+        icon: "/assets/logo/apple-intelligence.png",
         label: "A16 Bionic chip with 5-core GPU",
       },
       {
-        icon: "/src/assets/logo/camera-16pro.png",
+        icon: "/assets/logo/camera-16pro.png",
         label:
           "Dual-camera system<br>48MP Main camera<br>2x Telephoto<br>Ultra Wide camera",
       },
       {
-        icon: "/src/assets/logo/chip-A18-pro.png",
+        icon: "/assets/logo/chip-A18-pro.png",
         label: "Super Retina XDR display",
       },
       {
-        icon: "/src/assets/logo/camera-control.png",
+        icon: "/assets/logo/camera-control.png",
         label: "IP68 water resistance",
       },
       {
-        icon: "/src/assets/logo/battery.png",
+        icon: "/assets/logo/battery.png",
         label: "Up to 20 hours video playback",
       },
     ],

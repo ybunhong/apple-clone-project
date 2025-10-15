@@ -75,6 +75,10 @@
 
 import "./icon-button.css";
 import { BaseComponent } from "../base-component.js";
+import chevornIcon from "../../assets/icons/chevorn.svg";
+import playIcon from "../../assets/icons/play-button.svg";
+import pauseIcon from "../../assets/icons/pause-button.svg";
+import plusIcon from "../../assets/icons/rounded-plus.svg";
 
 class IconButton extends BaseComponent {
   static get observedAttributes() {
@@ -108,7 +112,6 @@ class IconButton extends BaseComponent {
       }
 
       if (this.hasToggleIcon) {
-        this.isToggled = !this.isToggled;
         this.setToggleIcon();
       }
 
@@ -134,7 +137,7 @@ class IconButton extends BaseComponent {
   }
 
   setToggleIcon() {
-    this.icon = this.isToggled ? this.toggleIcon : this.originalIcon;
+    this.isToggled = !this.isToggled;
     this.updateTemplate();
   }
 
@@ -178,8 +181,12 @@ class IconButton extends BaseComponent {
     let buttonContent = "";
 
     if (hasIcon) {
+      const icons = { chevorn: chevornIcon, play: playIcon, pause: pauseIcon, plus: plusIcon };
+      const iconName = this.isToggled ? this.toggleIcon : this.icon;
+      const iconSrc = icons[iconName] || this.icon;
+
       buttonContent += `<img 
-        src="${this.icon}" 
+        src="${iconSrc}" 
         alt="${altText}" 
         class="icon-image" 
         style="width: ${24 * currentSize}px; height: ${24 * currentSize}px;" 
