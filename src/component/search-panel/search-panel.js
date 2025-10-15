@@ -2,7 +2,8 @@ import "./search-panel.css";
 import "../index";
 import "/main.css";
 import { BaseComponent } from "../base-component.js";
-import arrowIcon from "/src/assets/icons/arrow.svg"; // Static image path
+import arrowIcon from "../../assets/icons/arrow.svg"; // Static image path
+import searchIcon from "../../assets/icons/search.svg";
 
 class SearchPanel extends BaseComponent {
   constructor() {
@@ -53,7 +54,7 @@ class SearchPanel extends BaseComponent {
     <div class="max-width-container">
       <aside class="search-panel">
           <icon-input
-            icon-input="/src/assets/icons/search.svg"
+            icon-input="${searchIcon}"
             text="Search apple.com"
           ></icon-input>
         <p style="font-size:14px; padding: 8px">Quick Link</p>

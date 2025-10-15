@@ -2,15 +2,6 @@ import "./carousel-swipe.css";
 import "../index.js";
 import { BaseComponent } from "../base-component.js";
 
-import img1 from "/src/assets/carousel/baseball.jpg";
-import img2 from "/src/assets/carousel/ironman.jpg";
-import img3 from "/src/assets/carousel/messi.jpg";
-import img4 from "/src/assets/carousel/newjune.jpg";
-import img5 from "/src/assets/carousel/ted.jpg";
-import img6 from "/src/assets/carousel/youth.jpg";
-import img7 from "/src/assets/carousel/studio.jpg";
-import img8 from "/src/assets/carousel/robot.jpg";
-import img9 from "/src/assets/carousel/tom.jpg";
 
 export class CaroselSwipe extends BaseComponent {
   constructor() {
@@ -36,16 +27,16 @@ export class CaroselSwipe extends BaseComponent {
 
           <!-- Slides container for sliding effect -->
           <div class="carousel-slides-container">
-            <div class="carousel-slide"><img src="${img1}" /></div>
-            <div class="carousel-slide"><img src="${img2}" /></div>
-            <div class="carousel-slide"><img src="${img3}" /></div>
-            <div class="carousel-slide"><img src="${img4}" /></div>
-            <div class="carousel-slide"><img src="${img5}" /></div>
-            <div class="carousel-slide"><img src="${img6}" /></div>
-            <div class="carousel-slide"><img src="${img7}" /></div>
-            <div class="carousel-slide"><img src="${img8}" /></div>
-            <div class="carousel-slide"><img src="${img9}" /></div>
-            <div class="carousel-slide"><img src="${img1}" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/baseball.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/ironman.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/messi.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/newjune.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/ted.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/youth.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/studio.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/robot.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/tom.jpg" /></div>
+            <div class="carousel-slide"><img src="/assets/carousel/baseball.jpg" /></div>
           </div>
         </div>
 

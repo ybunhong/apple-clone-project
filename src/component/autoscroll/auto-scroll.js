@@ -1,12 +1,7 @@
 import "../index.js";
 import { BaseComponent } from "../base-component.js";
 import "./auto-scroll.css";
-import img1 from "/src/assets/auto-scroll/image1.jpg";
-import img2 from "/src/assets/auto-scroll/image2.jpg";
-import img3 from "/src/assets/auto-scroll/image3.jpg";
-import img4 from "/src/assets/auto-scroll/image4.jpg";
-import img5 from "/src/assets/auto-scroll/image5.jpg";
-import img6 from "/src/assets/auto-scroll/image6.png";
+import { pause, play } from "../../assets/assets.js"; // Assuming these are exported from your assets
 
 export class AutoScroll extends BaseComponent {
   static get observedAttributes() {
@@ -36,48 +31,48 @@ export class AutoScroll extends BaseComponent {
     <div class="slider">
         <div class="slide-track" id="scroll-track">
             <div class="slide">
-                <img src='${img1}'/>
+                <img src='/assets/auto-scroll/image1.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img2}'/>
+                <img src='/assets/auto-scroll/image2.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img3}'/>
+                <img src='/assets/auto-scroll/image3.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img4}'/>
+                <img src='/assets/auto-scroll/image4.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img5}'/>
+                <img src='/assets/auto-scroll/image5.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img6}'/>
+                <img src='/assets/auto-scroll/image6.png'/>
             </div>
 
             <div class="slide">
-                <img src='${img1}'/>
+                <img src='/assets/auto-scroll/image1.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img2}'/>
+                <img src='/assets/auto-scroll/image2.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img3}'/>
+                <img src='/assets/auto-scroll/image3.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img4}'/>
+                <img src='/assets/auto-scroll/image4.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img5}'/>
+                <img src='/assets/auto-scroll/image5.jpg'/>
             </div>
             <div class="slide">
-                <img src='${img6}'/>
+                <img src='/assets/auto-scroll/image6.png'/>
             </div>
         </div>
     </div>
     <div class="button-container">
     <span class="bg-rounded-button">
       <div class="play-button">
-        <icon-button id="scroll-toggle" icon="/src/assets/icons/pause-button.svg" toggle-icon="/src/assets/icons/play-button.svg" size="0.6"></icon-button>
+        <icon-button id="scroll-toggle" icon="${pause}" toggle-icon="${play}" size="0.6"></icon-button>
       </div>
       </span>
     </div>
